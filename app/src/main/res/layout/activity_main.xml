@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/InterfaceGray"
+    android:isScrollContainer="false"
+    android:padding="6dp"
+    tools:context=".MainActivity">
+    <!--Constraint layout -->
+
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/imageView2"
+        android:layout_width="0dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:adjustViewBounds="false"
+        android:drawable="@drawable/rounded_corners"
+        android:foreground="@drawable/logo_002"
+        android:isScrollContainer="false"
+        app:layout_constraintBottom_toTopOf="@+id/materialCardView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_002" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="500dp" />
+    <!--TextView-->
+    <!--FloatingActionButton -->
+    <!--MaterialCardView-->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardView2"
+        style="@style/custom_card_view_style"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:isScrollContainer="false"
+        app:cardBackgroundColor="@color/InterfaceWhite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2">
+        <!--Constraint layout -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:isScrollContainer="false">
+            <!--Edit Text-->
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="21dp"
+                android:layout_height="32dp"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="6dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/lottieAnimationView"
+                android:layout_width="118dp"
+                android:layout_height="69dp"
+                android:layout_centerInParent="true"
+                app:layout_constraintBottom_toTopOf="@+id/et_user_id"
+                app:layout_constraintEnd_toEndOf="parent"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="false"
+                app:lottie_rawRes="@raw/user2" />
+
+            <EditText
+                android:id="@+id/et_user_id"
+                android:layout_width="300dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="76dp"
+                android:background="@drawable/edittext_background"
+                android:backgroundTint="@color/InterfaceGreen"
+                android:drawableLeft="@drawable/user_svgrepo_com"
+                android:drawablePadding="12dp"
+                android:drawableTint="@color/InterfaceBlack"
+                android:ems="10"
+                android:fontFamily="sans-serif-medium"
+                android:hint="@string/User_ID"
+                android:inputType="textCapSentences"
+                android:padding="18dp"
+                android:shadowColor="@color/app_theme_dark"
+                android:textColor="#000000"
+                android:textColorHint="@color/InterfaceBlack"
+                android:textSize="13sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <!--FloatingActionButton-->
+            <!--Edit text  Password-->
+            <!--btn_Login-->
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="300dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/edittext_background"
+                android:backgroundTint="@color/InterfaceGreen"
+                android:drawableLeft="@drawable/lock_svgrepo_com"
+                android:drawablePadding="12dp"
+                android:drawableTint="@color/black"
+                android:ems="10"
+                android:hint="@string/Password"
+                android:inputType="textPassword"
+                android:padding="18dp"
+                android:textColor="#000000"
+                android:textColorHint="@color/InterfaceBlack"
+                android:textSize="13sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintBottom_toTopOf="@+id/btn_view_service_report"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_user_id" />
+
+            <!--Linear Layout Forgot password -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_view_service_report"
+                android:layout_width="300dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/button_background"
+                android:backgroundTint="@color/InterfaceGreen"
+                android:fontFamily="sans-serif-medium"
+                android:onClick="login"
+                android:padding="10dp"
+                android:text="@string/Login"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold|italic"
+                app:cornerRadius="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_password" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/lottieAnimationView2"
+                android:layout_width="232dp"
+                android:layout_height="104dp"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="12dp"
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_view_service_report"
+                app:layout_constraintVertical_bias="1.0"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/nfc" />
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/imageView3"
+                android:layout_width="100dp"
+                android:layout_height="16dp"
+                android:layout_marginBottom="14dp"
+                android:foreground="@drawable/logo_name"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:srcCompat="@drawable/technologycenter"
+                tools:srcCompat="@drawable/logo_003" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+                <!--Text view Password -->
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:paddingEnd="5dp"
+                    android:text="@string/Forgot"
+                    android:textColor="@color/black" />
+                <!--Constraint layout -->
+
+                <TextView
+                    android:id="@+id/tv_sign_up"
+                    android:layout_width="74dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:text="@string/FPassword"
+                    android:textColor="@color/app_theme"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

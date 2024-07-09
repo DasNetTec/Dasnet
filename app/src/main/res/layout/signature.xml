@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/app_gray_theme"
+    tools:context=".Signature">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="1dp"
+        android:adjustViewBounds="false"
+        android:drawable="@drawable/rounded_corners"
+        android:foreground="@drawable/logo_003"
+        app:layout_constraintBottom_toTopOf="@+id/materialCardView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_002"
+        tools:visibility="visible" />
+
+
+    <com.example.dasnet.SignatureView
+        android:id="@+id/signatureView"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_marginTop="120dp"
+        android:background="#FFFFFF"
+        android:defaultFocusHighlightEnabled="false" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/signatureView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginHorizontal="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/button_background"
+        android:backgroundTint="@color/InterfaceGreen"
+        android:ems="10"
+        android:fontFamily="sans-serif-medium"
+        android:hint="Comentarios"
+        android:inputType="textMultiLine"
+        android:maxLength="510"
+        android:maxLines="3"
+        android:padding="8dp"
+
+        android:scrollbars="vertical"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textColorHint="@color/InterfaceBlack"
+        android:textSize="16sp"
+        android:textStyle="italic" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnClear"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/editTextText"
+        android:layout_alignEnd="@+id/editTextText"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="0dp"
+        android:background="@drawable/button_background"
+        android:backgroundTint="@color/InterfaceGreen"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/clean"
+        android:textColor="@color/black"
+        android:textSize="10sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSend"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/editTextText"
+
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_background"
+        android:backgroundTint="@color/InterfaceGreen"
+        android:text="@string/sendReport"
+        android:textColor="@color/black"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="93dp"
+        android:text="Please add your signature to finalize the report."
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="320dp"
+        android:text="_______________________________________________"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="340dp"
+        android:text="Sign here"
+        android:textStyle="italic" />
+</RelativeLayout>

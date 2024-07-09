@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="app_theme">#009dff</color>
+    <color name="app_theme_light">#f6fbff</color>
+    <color name="edit_text_border">#03A9F4</color>
+    <color name="edit_text_background">#f6fbff</color>
+    <color name="app_theme_dark">#1B1C1E</color>
+
+    <!--Dasnet Colors -->
+    <color name ="app_white_theme">#F5F5F5</color>
+    <color name ="text_color">#6E6262</color>
+    <color name ="app_gray_theme">#F5F5F0</color>
+    <color name = "celeste_background">#9EFAEF</color>
+    <color name = "blue_background">#1F8EF4</color>
+    <color name = "celeste_background_gradient">#9AC9F4</color>
+    
+
+    <!--Dasnet ColorsV1-2 -->
+    <color name ="app_green_theme">#769995</color>
+    <color name ="app_black_theme">#000000</color>
+    <color name ="app_green_theme2">#425453</color>
+    <color name="blueBlack">#111f28</color>
+    <color name="tanAccent">#e3cdb3</color>
+    <color name="blackinterface">#202020</color>
+    <color name = "greenStep">#769995</color>
+
+    <!---DASNET-COLORS-->
+    <color name = "InterfaceBlack">#222831</color>
+    <color name = "InterfaceGray">#31363F</color>
+    <color name = "InterfaceGreen">#76ABAE</color>
+    <color name = "InterfaceWhite">#EEEEEE</color>
+
+    <color name="statusBarColor">#222831</color>
+
+
+</resources>

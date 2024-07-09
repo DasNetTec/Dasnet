@@ -1,0 +1,53 @@
+<resources>
+    <!--String declarations different views-->
+    <!--Login View Strings-->
+    <string name ="Technology_Center">Technology Center</string>
+    <string name = "app_name">DasNet</string>
+    <string name = "User_ID">USER ID</string>
+    <string name = "Password">PASSWORD</string>
+    <string name = "Login">Login</string>
+    <string name = "RFID">RFID</string>
+    <string name = "Forgot">Forgot </string>
+    <string name = "FPassword">Password?</string>
+    <!--Service Report-->
+    <string name = "ViewSR">View Service Report</string>
+    <string name = "CreateSR">Create Service Report</string>
+    <string name = "Username">Username</string>
+
+    <!--QR Reader -->
+    <string name = "Welcome_Back">Welcome Back : </string>
+    <string name = "View_Service_Report">View Service Report</string>
+    <string name = "Create_Service_Report">Create Service Report</string>
+
+
+    <!--Filter-->
+    <string name = "QR">QR Result</string>
+    <string name = "Manufacturer">Manufacturer</string>
+    <string name = "MachineType">Machine Type</string>
+    <string name = "SerialNumber">Serial Number</string>
+    <string name = "Get_Report">Get Report</string>
+
+    <!--Recycle-->
+    <string name="Report_Number">Report_Number</string>
+    <string name="Report_ID">Report_id</string>
+    <string name ="Machine">Insignum 4000</string>
+
+    <string name="reportdate">report date</string>
+
+    <string name="loading_message">Por favor espere....</string>
+
+    <string name="no_content_message">No content found in scanned QR code.</string>
+    <string name="simple">Simple Checklist Generator</string>
+
+    <!--Signature-->
+    <string name = "clean">Limpiar</string>
+    <string name = "sendReport">Enviar Reporte</string>
+
+    <string name = "Contact_us">Soporte Dasnet</string>
+    <string name = "Message_Support">Para restablecer tu contraseña por favor de enviar un mensaje al siguiente correo Soporte@dasnet.com</string>
+
+
+
+    <!--PDF Viewer -->
+
+</resources>
